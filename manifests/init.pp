@@ -37,6 +37,6 @@ class graphical_login {
         }
 # Mac OS X always has graphical login.        
         'Darwin': {}
-        default: { unimplemented() }
+        default: { fail "unimplemented on ${::osfamily}" }
     }
 }
